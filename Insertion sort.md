@@ -1,4 +1,3 @@
-Sure sir! Here's the **simplest and most beginner-friendly version** of **Insertion Sort** in Python — with very clear logic and variable names.
 
 ---
 
