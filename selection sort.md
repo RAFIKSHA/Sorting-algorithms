@@ -60,12 +60,28 @@ def selection_sort(arr):
 
     return arr
 
+
+
+
 # Example usage
 arr = [5, 3, 8, 4, 2]
 sorted_arr = selection_sort(arr)
 print("Sorted array:", sorted_arr)
 ```
+---
+```
+def selection_sort(arr):
+    for i in range(len(arr)):
+        rest = arr[i:]                  # Remaining part of array
+        smallest = min(rest)           # Find minimum in the rest
+        smallest_index = arr.index(smallest, i)  # Real index of minimum
+        arr[i], arr[smallest_index] = arr[smallest_index], arr[i]  # Swap
+    return arr
 
+arr = [5, 3, 8, 4, 2]
+print("Sorted array:", selection_sort(arr))
+```
+---
 ---
 
 ### ✅ Output
